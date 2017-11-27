@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>RankMe</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/main.js"></script>
+  
+</div>
+</head>
+<body onload="setFormFocus();">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+        <img src="images/university.jpg" width="250px">
+      <div class="one-half column" style="margin-top: 5%">
+        <h3>RankMe</h3>
+        <p>Every year, many students apply to graduate school in hopes of earning higher education. Many variables factor into a students application that can carry huge weight in the admissions process. By providing information about you, RankMe can help you estimate your chances and work on improving your application.</p>
+          <a class="button button-primary" href="#">Learn More</a>
+          <div id="features">
+            <h4>PhD Program Statistics</h4>
+            <section>
+               <i class="fa fa-users fa-2x"></i>
+               <title>2500 < Accepted each year</title>
+            </section>
+            <section>
+              <i class="fa fa-file-text fa-2x"></i>  
+              <title>304 Average GRE</title>
+            </section>
+            <section>
+              <i class="fa fa-star fa-2x"></i> 
+              <title>3.8 Average GPA</title>
+            </section>
+            <section>
+              <i class="fa fa-money fa-2x"></i>
+              <title>$30,000 Average stipend</title>
+            </section>   
+            <section>
+              <i class="fa fa-graduation-cap fa-2x"></i>
+              <title>50% Drop out</title>
+            </section>
+            </div>
+            
+          <form action="" method="post" onsubmit="return confirmSubmit() & rankUser();"> 
+              <h4>Take the test</h4>
+              <div class="row">
+                <div class="six columns">
+                  <label for="=NameInput">Your name</label>
+                  <input class="u-full-width" type="text" placeholder="Your full name" id="NameInput">
+                  <label for="=EmailInput">Your email</label>
+                  <input class="u-full-width" type="email" placeholder="you@mailbox.com" id="EmailInput">
+                  <label for="=GREInput">Your GRE</label>
+                  <input class="u-full-width" type="number" min="000" max="340" maxlength="3" placeholder="000/340" id="GREInput">
+                </div>
+                <div class="six columns">
+                  <label for="UniversityInput">University</label>
+                  <select class="u-full-width" id="UniversityInput">
+                    <option value="unselected">Select your university</option>  
+                    <option value="UH">University of Houston</option>
+                    <option value="RU">Rice University</option>
+                    <option value="AM">Texas A&M</option>
+                    <option value="UTA">Univeristy of Texas at Austin</option>
+                    <option value="UTD">Univeristy of Texas at Dallas</option>
+                  </select>
+                  <label for="=PhoneInput">Your phone number</label>
+                  <input class="u-full-width" type="number" maxlength="12" placeholder="+1 234 567 8900" id="PhoneInput">
+                  <label for="=GPAInput">Your GPA</label>
+                  <input class="u-full-width" type="number" min="0.0" max="4.0" step="0.01" maxlength="4" placeholder="0.0/4.0" id="GPAInput">
+                </div>
+              </div>
+              <label for="ResearchInput">Research Experience</label>
+              Yes <input type="radio" value="yes" id="ResearchInput">
+              No <input type="radio" value="no" id="ResearchInput">
+              <label class="example-send-yourself-copy">
+                <input type="checkbox">
+                <span class="label-body">Send a copy to yourself</span>
+              </label>
+              <input class="button-primary" type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+  </div>
+    
+    
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
