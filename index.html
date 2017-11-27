@@ -29,7 +29,8 @@
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/main.js"></script>
-  
+  <script src="js/index.js"></script>
+    
 </div>
 </head>
 <body onload="setFormFocus();">
@@ -42,7 +43,7 @@
       <div class="one-half column" style="margin-top: 5%">
         <h3>RankMe</h3>
         <p>Every year, many students apply to graduate school in hopes of earning higher education. Many variables factor into a students application that can carry huge weight in the admissions process. By providing information about you, RankMe can help you estimate your chances and work on improving your application.</p>
-          <a class="button button-primary" href="#">Learn More</a>
+          <a class="button button-primary" href="https://www.phdportal.com/articles/571/the-guide-to-your-phd-application.html">Learn More</a>
           <div id="features">
             <h4>PhD Program Statistics</h4>
             <section>
@@ -67,7 +68,7 @@
             </section>
             </div>
             
-          <form action="" method="post" onsubmit="return confirmSubmit() & rankUser();"> 
+          <form action="" method="get" onsubmit="return confirmSubmit() & rankUser();"> 
               <h4>Take the test</h4>
               <div class="row">
                 <div class="six columns">
@@ -95,13 +96,11 @@
                 </div>
               </div>
               <label for="ResearchInput">Research Experience</label>
-              Yes <input type="radio" value="yes" id="ResearchInput">
-              No <input type="radio" value="no" id="ResearchInput">
+                  Yes <input type="radio" value="yes" id="ResearchInput">
+                  No <input type="radio" value="no" id="ResearchInput">
               <label class="example-send-yourself-copy">
-                <input type="checkbox">
-                <span class="label-body">Send a copy to yourself</span>
               </label>
-              <input class="button-primary" type="submit" value="Submit">
+              <input class="button-primary" type="submit" value="submit">
         </form>
     </div>
     </div>

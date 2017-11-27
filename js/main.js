@@ -44,7 +44,7 @@ function confirmSubmit(){
 function rankUser(){
     var GREpass = false;
     var GPApass = false;
-    var Researchpass = true;
+    var Researchpass = false;
     
     if(document.forms[0].UniversityInput.value == "UH"){
         if(document.forms[0].GREInput.value > "305"){
@@ -107,8 +107,9 @@ function rankUser(){
     }
     
     if(GREpass && GPApass && Researchpass){
-        window.open("./accepted.html");
+        window.open("accepted.html");
     }
-    else:
-        window.open("./rejected.html");
+    else{
+        window.open("rejected.html");
+    }
 }

@@ -1,3 +1,30 @@
+.container-accepted {
+    height: 50em;
+    position: relative
+}
+
+.container-accepted h1 {
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.container-accepted p {
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 svg{
   background: #FFEFE9;
   padding-left: 250px;
