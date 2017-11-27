@@ -109,4 +109,6 @@ function rankUser(){
     if(GREpass && GPApass && Researchpass){
         window.open("./accepted.html");
     }
+    else:
+        window.open("./rejected.html");
 }
